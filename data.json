@@ -1,0 +1,8 @@
+{
+    "my-app": {
+        "multiline": "my name is khaleel/ni am a full-stack developer/ncurrently working as a wen developer at capgemini",
+        "script": "script-name",
+        "test": "test-script",
+        "test1": "test-script1"
+    }
+}

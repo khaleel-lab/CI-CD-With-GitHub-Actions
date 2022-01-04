@@ -1,0 +1,26 @@
+# YAML has comment feature but in json can't comment
+# we can write string in single quote - '' or double quote "" or without quote as well in YAML
+
+# multiline by using | pipe symbol
+# in json we use /n for nextline
+# Objects in YAML
+my-app:
+  multiline: |
+    my name is khaleel
+    am a full-stack developer
+    currently working as a web developer at capgemini
+  script: script-name
+  test: 'test-script'
+  test1: 'test-script1'
+  testDone: false
+  testCases: 10
+  # array with objects in YAML
+  array:
+    - key1: value1
+      keyRandom1: keyRandom1
+      user:
+        keyInner: valueInner
+    - key2: value2
+      keyRandom2: keyRandom2
+# we want to validate once after completion of config
+# we can get in google - yamlvalidator
