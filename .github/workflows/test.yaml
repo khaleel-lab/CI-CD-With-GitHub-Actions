@@ -1,10 +1,10 @@
 name: My First GitHub Action
 # push, pull_request, deployment_status
-on:[push]
+on: [push]
 jobs:
   print-hello-world:
     runs-on: ubuntu-latest
-    steps: 
-    # run is a bash command
+    steps:
+      # run is a bash command
       - run: echo "Hello World!!!"
       - run: echo "This is step number 2"
