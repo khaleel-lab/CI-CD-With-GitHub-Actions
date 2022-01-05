@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '14.17.0'
       - name: Build the project
-        run: run build
+        run: npm build
       - name: Setup finish!
         run: echo 'Hurray!'
 
