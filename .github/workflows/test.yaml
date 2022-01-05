@@ -8,3 +8,9 @@ jobs:
       # run is a bash command
       - run: echo "Hello World!!!"
       - run: echo "This is step number 2"
+    print-hello-world2:
+    runs-on: windows
+    steps:
+      # run is a bash command
+      - run: echo "Hello World!!!"
+      - run: echo "This is step number 2"
