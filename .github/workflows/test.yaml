@@ -7,4 +7,18 @@ jobs:
     steps:
       # run is a bash command
       - uses: actions/checkout@v2
-      - run: tree
+      # - run: tree
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.17.0'
+      - name: Build the project
+        run: run build
+      - name: Setup finish!
+        run: echo 'Hurray!'
+
+  # print-hello-world:
+  #   runs-on: windows-latest
+  #   steps:
+  #     # run is a bash command
+  #     - run: echo "Hello World!!!"
+  #     - run: echo "This is step number 2"
