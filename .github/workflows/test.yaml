@@ -5,9 +5,9 @@ jobs:
   buildApp:
     runs-on: ubuntu-latest
     outputs:
-      text: ${{steps.finished.outputs.text}}
-    env:
-      VERCEL_TOKEN: ${{ secretes.VERCEL_TOKEN }}
+      text: ${{ steps.finished.outputs.text }}
+    # env:
+    #   VERCEL_TOKEN: ${{ secretes.VERCEL_TOKEN }}
     steps:
       # run is a bash command
       - uses: actions/checkout@v2
