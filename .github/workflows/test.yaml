@@ -18,9 +18,9 @@ jobs:
       - name: Setup finish!
         run: echo 'Hurray!'
 
-  # print-hello-world:
-  #   runs-on: windows-latest
-  #   steps:
-  #     # run is a bash command
-  #     - run: echo "Hello World!!!"
-  #     - run: echo "This is step number 2"
+  test-app:
+    needs: build-app
+    runs-on: windows-latest
+    steps:
+      # run is a bash command
+      - run: echo "YOLO"
